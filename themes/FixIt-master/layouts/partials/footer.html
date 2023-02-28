@@ -4,15 +4,15 @@
       {{- /* Custom Content */ -}}
       {{- partial (.Scratch.Get "customFilePath").footer . -}}
 
-      {{- /* Hugo and FixIt */ -}}
-      {{- if ne .Site.Params.footer.hugo false -}}
-        <div class="footer-line powered{{ with .Site.Params.footer.order.powered }} order-{{ . }}{{ end }}">
-          {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo %v">Hugo</a>` hugo.Version -}}
-          {{- $theme := printf `<a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt %v"><img class="fixit-icon" src="%v" alt="FixIt logo" />&nbsp;FixIt</a>`
-            (.Scratch.Get "version")
-            (resources.Get "fixit.svg" | minify).RelPermalink
+      {{- /* Created by Devmichael and the FixIt logo */ -}}
+      {{- if ne .Site.Params.footer.Created false -}}
+        <div class="footer-line Created{{ with .Site.Params.footer.order.Created }} order-{{ . }}{{ end }}">
+          {{- $devwebmichael := printf `<a href="https://devwebmichael.github.io/" target="_blank" rel="external nofollow noopener noreferrer" title="devwebmichael">devwebmichael</a>` -}}
+          {{- $theme := printf `<a href="https://devwebmichael.github.io/" target="_blank" rel="external" title="FixIt"><img class="fixit-icon" src="%v" alt="FixIt logo" />&nbsp;*</a>`
+            (resources.Get "test.svg" | minify).RelPermalink
           -}}
-          {{- dict "Hugo" $hugo "Theme" $theme | T "footer.poweredBySome" | safeHTML }}
+          {{- dict "devwebmichael" $devwebmichael "Theme" $theme | T "footer.CreatedBySome" | safeHTML }}
+         
         </div>
       {{- end -}}
 
@@ -39,7 +39,7 @@
 
           {{- /* License */ -}}
           {{- with .Site.Params.footer.license -}}
-            <span class="license footer-divider">{{ . | safeHTML }}</span>
+             <!--<span class="license footer-divider">{{ . | safeHTML }}</span>-->
           {{- end -}}
         </div>
       {{- end -}}

@@ -60,7 +60,7 @@ switchTheme = "Switch Theme"
 
 # === partials/footer.html ===
 [footer]
-poweredBySome = "Powered by {{ .Hugo }} | Theme - {{ .Theme }}"
+CreatedBySome = "Created by {{ .devwebmichael }} | {{ .Theme }}"
 siteUV = "Total visitors"
 sitePV = "Total visits"
 siteRunning = "Website running ..."
