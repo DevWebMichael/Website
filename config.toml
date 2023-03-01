@@ -65,7 +65,7 @@ Theme = "FixIt-master"
   # FixIt 0.2.15 | CHANGED FixIt theme version
   version = "0.2.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
   # site description
-  description = "This is my new Hugo FixIt site"
+  description = "Welcome to Filou's Disney Blog"
   # site keywords
   keywords = ["Hugo", "FixIt"]
   # site default theme ["light", "dark", "auto"]
@@ -76,7 +76,7 @@ Theme = "FixIt-master"
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
   # FixIt 0.2.0 | NEW date format
-  dateFormat = "2006-01-02"
+  dateFormat = "02-01-2006"
   # website images for Open Graph and Twitter Cards
   images = []
   # FixIt 0.2.12 | NEW enable PWA
@@ -85,7 +85,7 @@ Theme = "FixIt-master"
   externalIcon = false
   # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
   # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
-  disableThemeInject = false
+  disableThemeInject = true
 
   # FixIt 0.2.0 | NEW App icon config
   [params.app]
@@ -148,7 +148,7 @@ Theme = "FixIt-master"
       # URL of the LOGO
       logo = "/test.svg"
       # title name
-      name = "My New Hugo FixIt Site"
+      name = "Welcome to Filou's Disney Blog"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -183,7 +183,7 @@ Theme = "FixIt-master"
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
-    # license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    # license = 
     # FixIt 0.2.17 | CHANGED Site creation time
     [params.footer.siteTime]
       enable = false
@@ -204,7 +204,7 @@ Theme = "FixIt-master"
     # special amount of posts in each section page
     paginate = 20
     # date format (month and day)
-    dateFormat = "01-02"
+    dateFormat = "02-01"
     # amount of RSS pages
     rss = 10
     # FixIt 0.2.13 | NEW recently updated posts settings
@@ -262,7 +262,7 @@ Theme = "FixIt-master"
 
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
-    GitHub = ""
+    GitHub = "https://github.com/DevWebMichael"
     Linkedin = ""
     Twitter = ""
     Instagram = ""
@@ -368,7 +368,7 @@ Theme = "FixIt-master"
     # FixIt 0.2.0 | NEW whether to enable the fontawesome extended syntax
     fontawesome = true
     # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    license = ''
     # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
     # FixIt 0.2.4 | NEW whether to show the full text content in RSS
@@ -381,9 +381,9 @@ Theme = "FixIt-master"
     # If true, save the reading progress when closing the page.
     autoBookmark = false
     # FixIt 0.2.17 | NEW whether to enable wordCount
-    wordCount = true
+    wordCount = false
     # FixIt 0.2.17 | NEW whether to enable readingTime
-    readingTime = true
+    readingTime = false
     # FixIt 0.2.17 | NEW end of post flag
     endFlag = ""
     # FixIt 0.2.18 | NEW whether to enable instant.page
@@ -488,7 +488,7 @@ Theme = "FixIt-master"
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
       Myspace = false
       Blogger = false
