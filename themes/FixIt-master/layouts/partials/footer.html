@@ -6,7 +6,7 @@
 
       {{- /* Created by Devmichael and the FixIt logo */ -}}
       {{- if ne .Site.Params.footer.Created false -}}
-        <div class="footer-line Created{{ with .Site.Params.footer.order.Created }} order-{{ . }}{{ end }}">
+      <div class="footer-line powered{{ with .Site.Params.footer.order.powered }} order-{{ . }}{{ end }}">
           {{- $devwebmichael := printf `<a href="https://devwebmichael.github.io/" target="_blank" rel="external nofollow noopener noreferrer" title="devwebmichael">devwebmichael</a>` -}}
           {{- $theme := printf `<a href="https://devwebmichael.github.io/" target="_blank" rel="external" title="Filou"><img class="fixit-icon" src="%v" alt="FixIt logo" />&nbsp;*</a>`
             (resources.Get "test.svg" | minify).RelPermalink
@@ -15,6 +15,21 @@
          
         </div>
       {{- end -}}
+<!---
+      {{- /* Hugo and FixIt */ -}}
+      {{- if ne .Site.Params.footer.hugo false -}}
+        <div class="footer-line powered{{ with .Site.Params.footer.order.powered }} order-{{ . }}{{ end }}">
+          {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo %v">Hugo</a>` hugo.Version -}}
+          {{- $theme := printf `<a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt %v"><img class="fixit-icon" src="%v" alt="FixIt logo" />&nbsp;FixIt</a>`
+            (.Scratch.Get "version")
+            (resources.Get "fixit.svg" | minify).RelPermalink
+          -}}
+          {{- dict "Hugo" $hugo "Theme" $theme | T "footer.poweredBySome" | safeHTML }}
+        </div>
+      {{- end -}}
+--->
+
+      
 
       {{- if .Site.Params.footer.copyright | or .Site.Params.footer.author | or .Site.Params.footer.license -}}
         <div class="footer-line copyright{{ with .Site.Params.footer.order.copyright }} order-{{ . }}{{ end }}" itemscope itemtype="http://schema.org/CreativeWork">
