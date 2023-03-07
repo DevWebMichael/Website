@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" version="1.1">
+  <defs>
+    <style>
+      .rotate {
+        animation: rotate 5s linear infinite;
+        transform-origin: center center;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </defs>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="256" fill="black" class="rotate">DEV.</text>
+</svg>
