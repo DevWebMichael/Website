@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>welcome - Tag - Website</title>
+    <link>http://devwebmichael.github.io/tags/welcome/</link>
+    <description>welcome - Tag - Website</description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 14 Feb 2023 16:41:25 &#43;0100</lastBuildDate><atom:link href="http://devwebmichael.github.io/tags/welcome/" rel="self" type="application/rss+xml" /><item>
+  <title>Firstone</title>
+  <link>http://devwebmichael.github.io/posts/firstone/</link>
+  <pubDate>Tue, 14 Feb 2023 16:41:25 &#43;0100</pubDate>
+  <author>DisneyFilou</author>
+  <guid>http://devwebmichael.github.io/posts/firstone/</guid>
+  <description><![CDATA[Welcome! We are excited to have you here. Thank you for choosing to be a part of our community.
+Here are some things you can expect from us:
+Regular updates on our products and services Helpful tips and resources to help you make the most of our offerings Opportunities to connect with other members of our community and share your feedback If you have any questions or concerns, please don&rsquo;t hesitate to reach out to us.]]></description>
+</item>
+</channel>
+</rss>
