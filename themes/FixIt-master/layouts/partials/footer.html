@@ -9,8 +9,6 @@
         <div class="footer-line Created{{ with .Site.Params.footer.order.Created }} order-{{ . }}{{ end }}">
           {{- $devwebmichael := printf `<a href="https://devwebmichael.github.io/" target="_blank" rel="external nofollow noopener noreferrer" title="devwebmichael">devwebmichael</a>` -}}
           {{- $theme := printf `<a href="https://devwebmichael.github.io/" target="_blank" rel="external" title="Filou"><img class="fixit-icon" src="%v" alt="FixIt logo" />&nbsp;*</a>`
-          <!--- (resources.Get "test.svg" | minify).RelPermalink
-          -}}-->
           (resources.Get "fixit.svg" | minify).RelPermalink
           -}}
           {{- dict "devwebmichael" $devwebmichael "Theme" $theme | T "footer.CreatedBySome" | safeHTML }}
