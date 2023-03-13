@@ -18,7 +18,7 @@ jobs:
       - name: Build Tina Admin
         id: build-tina-admin
         env:
-          CLIENT_ID: "472f0ce5-f1be-459c-785cc9057a1b"
+          CLIENT_ID: "472f0ce5-f1be-459c-9d51-785cc9057a1b"
           TINA_TOKEN: "371c01c4f19a9e17eb0ef46917b696d99deb87ae"
         run: |
           yarn
